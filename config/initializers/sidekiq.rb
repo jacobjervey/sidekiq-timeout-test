@@ -1,6 +1,5 @@
 Sidekiq.configure_server do |config|
-  
   config.server_middleware do |chain|
-    chain.add Kiqstand::Middleware
+    chain.insert_before(Sidekiq::Middleware::Server::Timeout, Kiqstand::Middleware)
   end
 end
