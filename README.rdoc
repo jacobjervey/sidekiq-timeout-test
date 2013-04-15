@@ -1,0 +1,7 @@
+Test application for Sidekiq issue #XXXXX
+
+Have a default config mongoDB and redis-server running
+
+Run the following commands simultaneously:
+bundle exec sidekiq -c 100
+bundle exec clockwork config/clock.rb
