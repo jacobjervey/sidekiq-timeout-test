@@ -1,4 +1,4 @@
-Test application for Sidekiq issue #XXXXX
+Test application for Sidekiq issue https://github.com/mperham/sidekiq/issues/852
 
 Have a default config mongoDB and redis-server running
 
